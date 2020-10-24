@@ -161,7 +161,7 @@ span.red {
 p.pink,
 span.pink {
   --Color: rgb(250, 110, 175);
-  --ColorA: rgba(180, 55, 115, 0.2);
+  --ColorA: rgba(255, 84, 166, 0.2);
 }
 p.green,
 span.green {
