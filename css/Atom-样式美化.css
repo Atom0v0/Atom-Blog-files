@@ -99,6 +99,10 @@ p.top {
   content: none !important;
 }
 
+.layout > div:first-child:not(.recent-posts) {
+  background: #fff0;
+}
+
 /* 滚动条美化 */
 /* --------------------------------------------------------------------------------------------------- */
 ::-webkit-scrollbar {
