@@ -125,13 +125,25 @@ h2, h3, h4, h5, h6 {
   src: url('https://cdn.jsdelivr.net/gh/Atom0v0/Atom-Blog-files@Atom/font/Atom-SYHT.woff2');
 }
 
-/* Dplayer右键美化 */
+/* Dplayer美化 */
 /* --------------------------------------------------------------------------------------------------- */
 #article-container a {
   color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: none;
+}
+.dplayer * {
+  border-radius: 12px;
+}
+audio, video {
+  border-radius: 12px !important;
+}
+.doge-inner-player {
+  border-radius: 12px !important;
+}
+.search-dialog {
+  border-radius: 12px;
 }
 
 /* a标签颜色改变 */
