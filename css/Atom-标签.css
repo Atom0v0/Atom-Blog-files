@@ -158,6 +158,11 @@ span.red {
   --Color: rgb(233, 30, 100);
   --ColorA: rgba(233, 30, 100, 0.2);
 }
+p.pick,
+span.pick {
+  --Color: rgb(250, 110, 175);
+  --ColorA: rgba(180, 55, 115, 0.2);
+}
 p.green,
 span.green {
   --Color: rgb(139, 195, 74);
@@ -317,6 +322,10 @@ p.p.cyan {
 span.p.blue,
 p.p.blue {
   color: #2196f3;
+}
+span.p.pick,
+p.p.pick {
+  color: #fa70b1;
 }
 span.p.gray,
 p.p.gray {
