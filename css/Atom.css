@@ -186,8 +186,8 @@ audio, video {
 .button--animated:before,
 .button--animated:hover:before,
 #nav .menus_items .menus_item .menus_item_child li:hover,
+.hide-inline > .hide-button,
 #nav .menus_items .menus_item:hover .menus_item_child {
-  display: block;
   border-radius: 10px;
 }
 
