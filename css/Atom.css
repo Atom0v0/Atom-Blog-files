@@ -273,3 +273,9 @@ span.inline-tag {
 blockquote {
   border-radius: 10px;
 }
+
+/* aplayer美化 */
+/* --------------------------------------------------------------------------------------------------- */
+.aplayer.aplayer-withlrc .aplayer-pic {
+  border-radius: 10px;
+}
