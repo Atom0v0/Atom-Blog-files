@@ -187,10 +187,12 @@ audio, video {
 .button--animated:hover:before,
 #nav .menus_items .menus_item .menus_item_child li:hover,
 .hide-inline > .hide-button,
+#error-wrap .error-content .error-info a,
 #nav .menus_items .menus_item:hover .menus_item_child {
   border-radius: 10px;
 }
 
+#pagination .page-number.current,
 #aside_content #card-toc .toc-content .toc-link {
   border-radius: 5px;
 }
