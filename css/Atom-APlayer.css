@@ -251,7 +251,8 @@
     background-size: cover;
     background-position: 50%;
     transition: all .3s ease;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 10px
 }
 
 .aplayer .aplayer-pic:hover .aplayer-button {
