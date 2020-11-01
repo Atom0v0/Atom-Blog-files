@@ -192,6 +192,7 @@ audio, video {
   overflow: hidden;
 }
 
+#pagination.pagination-post,
 #nav .menus_items .menus_item:hover .menus_item_child {
   border-radius: 10px;
 }
@@ -338,4 +339,11 @@ blockquote {
 /* --------------------------------------------------------------------------------------------------- */
 .aplayer.aplayer-withlrc .aplayer-pic {
   border-radius: 10px;
+}
+
+/* toc目录美化 */
+/* --------------------------------------------------------------------------------------------------- */
+#aside_content #card-toc .toc-content:before {
+  color: #565352;
+  font-style: initial;
 }
