@@ -1,7 +1,6 @@
 /* eslint-disable */
 (function ($) {
   "use strict";
-
   function setTabs() {
     const $tabs = $(".tabs");
     if ($tabs.length === 0) return;
@@ -39,7 +38,7 @@
 /* 禁止控制台 */
 /* --------------------------------------------------------------------------------------------------- */
 //禁止浏览器默认右键菜单
-document.oncontextmenu = function (event) {
+document.oncontextmenu = function(event) {
   event.preventDefault();
 };
 //禁止文本选中
@@ -76,7 +75,7 @@ document.onselectstart = new Function('event.returnValue=false;');*/
 };*/
 
 //禁止通过F12来打开
-document.onkeydown = document.onkeyup = document.onkeypress = function (event) {
+document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
   var e = event || window.event || arguments.callee.caller.arguments[0];
 
   if (e && e.keyCode == 123) {
@@ -86,19 +85,19 @@ document.onkeydown = document.onkeyup = document.onkeypress = function (event) {
 };
 
 var ConsoleManager = {
-  onOpen: function () {
+  onOpen: function() {
     alert('Console is opened');
   },
-  onClose: function () {
+  onClose: function() {
     alert('Console is closed');
   },
-  init: function () {
+  init: function() {
     var self = this;
     var x = document.createElement('div');
     var isOpening = false,
       isOpened = false;
     Object.defineProperty(x, 'id', {
-      get: function () {
+      get: function() {
         if (!isOpening) {
           self.onOpen();
           isOpening = true;
@@ -107,7 +106,7 @@ var ConsoleManager = {
       },
     });
 
-    setInterval(function () {
+    setInterval(function() {
       isOpened = false;
       console.info(x);
       console.clear();
@@ -120,19 +119,26 @@ var ConsoleManager = {
 };
 
 //打开控制台，跳转到其他页面
-ConsoleManager.onOpen = function () {
+ConsoleManager.onOpen = function() {
   try {
     window.location.href = '/404';
   } catch (err) {
     window.location.href = '/404';
     var a = document.createElement('button');
-    a.onclick = function () {
+    a.onclick = function() {
       window.location.href = '/404';
     };
     a.click();
   }
 };
-ConsoleManager.onClose = function () {
+ConsoleManager.onClose = function() {
   alert('Console is closed!!!!!');
 };
 ConsoleManager.init();
+
+//禁用页面的ctrl功能，来禁止ctrl+s保存功能
+window.addEventListener('keydown', function (e) {
+  if(e.keyCode == 83 && (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)){
+      e.preventDefault();
+  }
+})
